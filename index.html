@@ -6,8 +6,27 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
+<body>
+  
 
-<div class="main-wrapper">
+  <!-- Audio
+
+  <audio id="miAudio" controls="controls" width="640" height="480">
+    <source src="music/BohemianRhapsody.mp3" type="audio/mp3"/>
+    <source src="music/dont-stop-me-now.mp3" type="audio/mp3"/>
+    <source src="music/IWantToBreakFree.mp3" type="audio/mp3"/>
+    <source src="music/KillerQueen.mp3" type="audio/mp3"/>
+    <source src="music/SomebodyToLove.mp3" type="audio/mp3"/>
+  </audio>
+
+  <input id="audPlay" controls="controls" type="button" value="Play">
+  <input id="audPause" controls="controls" type="button" value="Pause">
+  <input id="audStop" controls="controls" type="button" value="Stop">
+  <input id="audUp" controls="controls" type="button" value="+">
+  <input id="audDown"controls="controls"  type="button" value="-"> -->
+
+
+  <div class="main-wrapper">
     <h2>BCplayer</h2>
     <div id="replayer-list" class="replayer-list">
         <h4>Lista</h4>
@@ -16,14 +35,19 @@
         <h4>Mis favoritos</h4>
     </div>
     <div id="replayer" class="replayer">
+      
+    
+      
     </div>
     <div id="controls" class="controls">
-        <button  type="button"><i class="fas fa-play-circle fa-3x"></i></button>
-        <button type="button"><i class="fas fa-pause-circle fa-3x"></i></button>
-        <button  type="button"><i class="fas fa-star fa-3x"></i></button><br>
+      <button id="playButton"  type="button"><i class="fas fa-play-circle fa-3x"></i></button>
+      <button id="pauseButton"  type="button"><i class="fas fa-pause-circle fa-3x"></i></button>
+      <button id="favButton"  type="button"><i class="fas fa-star fa-3x"></i></button>
+      <button id="allButton"  type="button"><i class="fas fa-clock fa-3x"></i></button>
     </div>
-</div>
-
-<script type="text/javascript" src="index.js" defer></script></body>
+  </div>
+  
+<!-- <script type="text/javascript" src="index.js" defer></script> -->
+<script type="text/javascript" src="alexClass.js" defer></script>
 </body>
 </html>
